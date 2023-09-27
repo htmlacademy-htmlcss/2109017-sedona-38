@@ -114,8 +114,8 @@
 
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-          <label>от<input type="text" value="0"></label>
-          <label>до<input type="text" value="9000"></label>
+          <label>от<input type="number" value="0"></label>
+          <label>до<input type="number" value="9000"></label>
         </fieldset>
 
           <button class="button" type="submit">Применить</button>
@@ -151,8 +151,12 @@
 
         <ul class="result-list">
           <li class="result-item">
-            <img class="result-img" src="#" alt="Звездное небо на фоне скалы">
-            <h3 class="hotel-name">Amara Resort & Spa</h3>
+            <a href="#" tabindex="-1">
+              <img class="result-img" src="#" alt="Звездное небо на фоне скалы">
+            </a>
+            <a href="#" tabindex="-1">
+              <h3 class="hotel-name">Amara Resort & Spa</h3>
+            </a>
             <p>Гостиница</p>
             <p>От 4000 ₽</p>
             <a class="button" href="#">
@@ -161,28 +165,40 @@
             <button type="submit" class="result-button">
               в избранное
             </button>
-            <p class="visually-hidden star-4"> Гостиница 4 звезды</p>
+            <p class="star star-4">
+              <span class="visually-hidden"> Гостиница 4 звезды</span>
+            </p>
             <p class="hotel-rating">Рейтинг: 8,5</p>
           </li>
 
           <li class="result-item">
-            <img class="result-img" src="#" alt="Пасмурное ночное небо с радугой на фоне скал">
-            <h3 class="hotel-name">Villas at Poco Diablo</h3>
+            <a href="#" tabindex="-1">
+              <img class="result-img" src="#" alt="Пасмурное ночное небо c радугой на фоне скал">
+            </a>
+            <a href="#" tabindex="-1">
+              <h3 class="hotel-name">Villas at Poco Diablo</h3>
+            </a>
             <p>Гостиница</p>
             <p>От 5000 ₽</p>
             <a class="button" href="#">
               Подробнее
             </a>
             <button type="submit" class="result-button">
-              в избранное
+              В избранное
             </button>
-            <p class="visually-hidden star-4"> Гостиница 4 звезды</p>
+            <p class="star star-4">
+              <span class="visually-hidden"> Гостиница 4 звезды</span>
+            </p>
             <p class="hotel-rating">Рейтинг: 9,2</p>
           </li>
 
           <li class="result-item">
-            <img class="result-img" src="#" alt="Ясное голубое небо на фоне большой скалы">
-            <h3 class="hotel-name">Desert Quail Inn</h3>
+            <a href="#" tabindex="-1">
+              <img class="result-img" src="#" alt="Ясное голубое небо на фоне большой скалы">
+            </a>
+            <a href="#" tabindex="-1">
+              <h3 class="hotel-name">Desert Quail Inn</h3>
+            </a>
             <p>Гостиница</p>
             <p>От 2500 ₽</p>
             <a class="button" href="#">
@@ -191,13 +207,19 @@
             <button type="submit" class="result-button">
               в избранное
             </button>
-            <p class="visually-hidden star-4"> Гостиница 4 звезды</p>
+            <p class="star star-3">
+              <span class="visually-hidden"> Гостиница 3 звезды</span>
+            </p>
             <p class="hotel-rating">Рейтинг: 6,9</p>
           </li>
 
           <li class="result-item">
-            <img class="result-img" src="#" alt="Ночное ясное небо на фоне скалистой горы">
-            <h3 class="hotel-name">GreenTree Inn</h3>
+            <a href="#" tabindex="-1">
+              <img class="result-img" src="#" alt="Ночное ясное небо на фоне скалистой горы">
+            </a>
+            <a href="#" tabindex="-1">
+              <h3 class="hotel-name">GreenTree Inn</h3>
+            </a>
             <p>Гостиница</p>
             <p>От 1500 ₽</p>
             <a class="button" href="#">
@@ -206,7 +228,9 @@
             <button type="submit" class="result-button">
               в избранное
             </button>
-            <p class="visually-hidden star-4"> Гостиница 4 звезды</p>
+            <p class="star star-2">
+              <span class="visually-hidden"> Гостиница 2 звезды</span>
+            </p>
             <p class="hotel-rating">Рейтинг: 5,0</p>
           </li>
         </ul>
