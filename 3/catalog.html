@@ -46,7 +46,7 @@
     </header>
 
     <main class="main-catalog">
-        <div>
+        <div class="filter" data-test="filter">
         <h1>Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -55,12 +55,10 @@
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
+            <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
         </ul>
-      </div>
 
-      <section class="filter" data-test="filter">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
@@ -122,7 +120,7 @@
           <button class="button" type="submit">Применить</button>
           <button class="button" type="reset">Сбросить</button>
         </form>
-      </section>
+      </div>
 
       <section class="result" data-test="catalog">
         <header class="result-header">
@@ -167,7 +165,7 @@
               в избранное
             </button>
             <p class="star star-4">
-              <span class="visually-hidden"> Гостиница 4 звезды</span>
+              <span class="visually-hidden">Гостиница 4 звезды</span>
             </p>
             <p class="hotel-rating">Рейтинг: 8,5</p>
           </li>
@@ -188,7 +186,7 @@
               В избранное
             </button>
             <p class="star star-4">
-              <span class="visually-hidden"> Гостиница 4 звезды</span>
+              <span class="visually-hidden">Гостиница 4 звезды</span>
             </p>
             <p class="hotel-rating">Рейтинг: 9,2</p>
           </li>
@@ -209,7 +207,7 @@
               в избранное
             </button>
             <p class="star star-3">
-              <span class="visually-hidden"> Гостиница 3 звезды</span>
+              <span class="visually-hidden">Гостиница 3 звезды</span>
             </p>
             <p class="hotel-rating">Рейтинг: 6,9</p>
           </li>
@@ -230,7 +228,7 @@
               в избранное
             </button>
             <p class="star star-2">
-              <span class="visually-hidden"> Гостиница 2 звезды</span>
+              <span class="visually-hidden">Гостиница 2 звезды</span>
             </p>
             <p class="hotel-rating">Рейтинг: 5,0</p>
           </li>
@@ -298,10 +296,14 @@
           </a>
         </li>
       </ul>
-      <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <p>
+        <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </p>
+      <p>
       <a class="htmlacademy-link" href="https://htmlacademy.ru/">
         <img src="images/html-academy-logo.svg" width="115" height="33" alt="Логотип HTML Academy">
       </a>
+    </p>
     </footer>
   </body>
 </html>
