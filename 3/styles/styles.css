@@ -47,7 +47,7 @@ body {
 .hero-page{
   color: #756157;
   background-color: #82B3D3;
-  background-image: url("../images/index-background.jpg");
+  background-image: url("images/hero-main.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
