@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header" data-test="header">
       <nav class="navigation">
-        <a class="navigation-logo" href="#">
-          <img class="page-header-logo" alt="Логотип сайта туристического городка Седона" src="#">
+        <a class="navigation-logo" href="index.html" aria-current="page">
+          <img class="page-header-logo" src="images/logo.svg" width="138" height="64" alt="Логотип сайта туристического городка Седона">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -46,8 +47,8 @@
 
     <main class="main-index" data-test="main">
       <section class="hero-page" data-test="hero">
-        <h1 class="visually-hidden">Седона</h1>
-        <img src="#" alt="Welcome to the gorgeous Sedona because the grand canyon sucrs">
+        <h1 class="visually-hidden">Сайт выбора гостиниц в Седоне</h1>
+        <img src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona because the grand canyon sucrs">
       </section>
 
       <section class="advantages" data-test="advantages">
@@ -61,7 +62,7 @@
             <p>Седона — не аттракцион для <br>
              туристов, там течёт своя<br>
              жизнь</p>
-            <img src="#" alt="Домик на фоне горного пейзажа">
+            <img src="images/advantages-images/advantages-1.jpg" width="800" height="385" alt="Городок на фоне горного пейзажа">
           </li>
           <li class="advantages-item">
             <h3>Небольшая площадь</h3>
@@ -81,10 +82,10 @@
           <li class="advantages-item">
             <h3>Там есть<br>
               мост дьявола</h3>
-            <img src="#" alt="Мост в скалистой местности">
             <p>Да, по нему можно пройти!<br>
              Если вы осмелитесь,<br>
              разумеется</p>
+             <img src="images/advantages-images/advantages-2.jpg" width="800" height="385" alt="Мост дьявола">
           </li>
         </ul>
       </section>
@@ -132,7 +133,7 @@
            <input  type="email" name="email" placeholder="Ваш e-mail">
            <span class="visually-hidden">Введите ваш email</span>
           </label>
-           <button class="button subscribe-button" type="submit">
+           <button class="button button-assistant" type="submit">
             <span class="visually-hidden">Подписаться</span>
           </button>
         </form>
@@ -143,23 +144,29 @@
       <h2 class="visually-hidden">Контакты</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="button" href="#">
+          <a class="social-link" href="#">
             <span class="visually-hidden">В Контакте</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="#">
+          <a class="social-link" href="#">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="#">
+          <a class="social-link" href="#">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
-      <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <p><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+      <p>
+        <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </p>
+      <p>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+        <img src="images/html-academy-logo.svg" width="115" height="33" alt="Логотип HTML Academy">
+      </a>
+    </p>
     </footer>
   </body>
 </html>

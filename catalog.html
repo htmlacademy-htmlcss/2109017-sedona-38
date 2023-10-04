@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="Логотип сайта туристического городка Седона" src="#">
+          <img class="page-header-logo"  src="images/logo.svg" width="138" height="64" alt="Логотип сайта туристического городка Седона">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -45,7 +46,7 @@
     </header>
 
     <main class="main-catalog">
-        <header class="catalog-header">
+        <div class="filter" data-test="filter">
         <h1>Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -54,12 +55,10 @@
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
+            <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
         </ul>
-      </header>
 
-      <section class="filter" data-test="filter">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
@@ -118,10 +117,10 @@
           <label>до<input type="number" value="9000"></label>
         </fieldset>
 
-          <button class="button" type="submit">Применить</button>
+          <button class="button button-assistant" type="submit">Применить</button>
           <button class="button" type="reset">Сбросить</button>
         </form>
-      </section>
+      </div>
 
       <section class="result" data-test="catalog">
         <header class="result-header">
@@ -138,7 +137,7 @@
             </li>
             <li class="view-item">
               <button  class="view-button" type="button">
-                <span class="visually-hidden">Выбрать отображение таблицей</span>
+                <span class="visually-hidden">Выбрать отображение слайдер</span>
               </button>
             </li>
             <li class="view-item">
@@ -152,7 +151,7 @@
         <ul class="result-list">
           <li class="result-item">
             <a href="#" tabindex="-1">
-              <img class="result-img" src="#" alt="Звездное небо на фоне скалы">
+              <img class="result-img" src="images/hotel-catalog-photo/hotel-1.jpg" width="300" height="212" alt="Звездное небо на фоне скалы">
             </a>
             <a href="#" tabindex="-1">
               <h3 class="hotel-name">Amara Resort & Spa</h3>
@@ -162,18 +161,18 @@
             <a class="button" href="#">
               Подробнее
             </a>
-            <button type="submit" class="result-button">
+            <button type="submit" class="button button-assistant">
               в избранное
             </button>
             <p class="star star-4">
-              <span class="visually-hidden"> Гостиница 4 звезды</span>
+              <span class="visually-hidden">Гостиница 4 звезды</span>
             </p>
             <p class="hotel-rating">Рейтинг: 8,5</p>
           </li>
 
           <li class="result-item">
             <a href="#" tabindex="-1">
-              <img class="result-img" src="#" alt="Пасмурное ночное небо c радугой на фоне скал">
+              <img class="result-img" src="images/hotel-catalog-photo/hotel-2.jpg"   width="300" height="212" alt="Пасмурное ночное небо c радугой на фоне скал">
             </a>
             <a href="#" tabindex="-1">
               <h3 class="hotel-name">Villas at Poco Diablo</h3>
@@ -183,18 +182,18 @@
             <a class="button" href="#">
               Подробнее
             </a>
-            <button type="submit" class="result-button">
-              В избранное
+            <button type="submit" class=" button result-button">
+              В избранном
             </button>
             <p class="star star-4">
-              <span class="visually-hidden"> Гостиница 4 звезды</span>
+              <span class="visually-hidden">Гостиница 4 звезды</span>
             </p>
             <p class="hotel-rating">Рейтинг: 9,2</p>
           </li>
 
           <li class="result-item">
             <a href="#" tabindex="-1">
-              <img class="result-img" src="#" alt="Ясное голубое небо на фоне большой скалы">
+              <img class="result-img" src="images/hotel-catalog-photo/hotel-3.jpg"  width="300" height="212" alt="Ясное голубое небо на фоне большой скалы">
             </a>
             <a href="#" tabindex="-1">
               <h3 class="hotel-name">Desert Quail Inn</h3>
@@ -204,18 +203,18 @@
             <a class="button" href="#">
               Подробнее
             </a>
-            <button type="submit" class="result-button">
+            <button type="submit" class="button button-assistant">
               в избранное
             </button>
             <p class="star star-3">
-              <span class="visually-hidden"> Гостиница 3 звезды</span>
+              <span class="visually-hidden">Гостиница 3 звезды</span>
             </p>
             <p class="hotel-rating">Рейтинг: 6,9</p>
           </li>
 
           <li class="result-item">
             <a href="#" tabindex="-1">
-              <img class="result-img" src="#" alt="Ночное ясное небо на фоне скалистой горы">
+              <img class="result-img" src="images/hotel-catalog-photo/hotel-4.jpg"   width="300" height="212" alt="Ночное ясное небо на фоне скалистой горы">
             </a>
             <a href="#" tabindex="-1">
               <h3 class="hotel-name">GreenTree Inn</h3>
@@ -225,11 +224,11 @@
             <a class="button" href="#">
               Подробнее
             </a>
-            <button type="submit" class="result-button">
+            <button type="submit" class="button button-assistant">
               в избранное
             </button>
             <p class="star star-2">
-              <span class="visually-hidden"> Гостиница 2 звезды</span>
+              <span class="visually-hidden">Гостиница 2 звезды</span>
             </p>
             <p class="hotel-rating">Рейтинг: 5,0</p>
           </li>
@@ -282,23 +281,29 @@
       <h2 class="visually-hidden">Контакты</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="button" href="#">
+          <a class="social-link" href="#">
             <span class="visually-hidden">В Контакте</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="#">
+          <a class="social-link" href="#">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="#">
+          <a class="social-link" href="#">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
-      <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <p><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+      <p>
+        <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </p>
+      <p>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+        <img src="images/html-academy-logo.svg" width="115" height="33" alt="Логотип HTML Academy">
+      </a>
+    </p>
     </footer>
   </body>
 </html>
