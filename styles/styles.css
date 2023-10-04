@@ -17,8 +17,8 @@
 body {
   font-family: "PT Sans", sans-serif;
 
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 22px;
+  line-height: 26px;
   color: #333333;
   background-color: #FFFFFF;
 }
@@ -44,14 +44,6 @@ body {
   text-align: center;
 }
 
-.hero-page{
-  color: #756157;
-  background-color: #82B3D3;
-  background-image: url("images/hero-main.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-
 .button-assistant {
   color: #ffffff;
   background: #82B3D3;
@@ -60,4 +52,74 @@ body {
 .result-button {
   color: #ffffff;
   background: #7DB54F;
+}
+
+.hero-page {
+  color: #756157;
+  background-image: url("../images/hero-main.jpg"), url("../images/divider-hero.svg");
+  background-color: #000000;
+  background-size: cover, contain;
+  background-repeat: no-repeat;
+  background-position: center, bottom;
+}
+
+.heading-section {
+font-size: 30px;
+font-weight: 700;
+line-height: 36px;
+text-transform: uppercase;
+}
+
+.heading-part {
+font-size: 24px;
+font-weight: 700;
+line-height: 28px;
+text-transform: uppercase;
+}
+.text-block {
+font-size: 18px;
+font-weight: 400;
+line-height: 21px;
+}
+
+.advantages-item-detail {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.subscribe {
+  color: #FFFFFF;
+  background-image: url("../images/subscribe.jpg");
+  background-color: #000000;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.filter {
+  color: #FFFFFF;
+  background-image: url("../images/filter.jpg");
+  background-color: #000000;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.breadcrumbs-link {
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 21px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.hotel-name {
+color: #000000;
+text-decoration: none;
+}
+
+.hotel-rating {
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
 }
