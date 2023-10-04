@@ -24,6 +24,7 @@ body {
 }
 
 .navigation-link {
+  font-family: inherit;
   font-size: 20px;
   color: #000000;
   font-weight: 700;
@@ -34,6 +35,7 @@ body {
 }
 
 .button {
+  font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -56,8 +58,8 @@ body {
 
 .hero-page {
   color: #756157;
-  background-image: url("../images/hero-main.jpg"), url("../images/divider-hero.svg");
-  background-color: #000000;
+  background-image: url("../images/divider-hero.svg"),url("../images/hero-main.jpg");
+  background-color: #cbe0ea;
   background-size: cover, contain;
   background-repeat: no-repeat;
   background-position: center, bottom;
@@ -96,6 +98,14 @@ line-height: 21px;
   background-position: center;
 }
 
+.footer-phone {
+  font-family: inherit;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+}
+
 .filter {
   color: #FFFFFF;
   background-image: url("../images/filter.jpg");
@@ -106,6 +116,7 @@ line-height: 21px;
 
 
 .breadcrumbs-link {
+  font-family: inherit;
   font-size: 16px;
   color: #FFFFFF;
   line-height: 21px;
