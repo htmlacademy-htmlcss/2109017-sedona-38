@@ -14,36 +14,69 @@
   font-display: swap;
 }
 
-body {
-  font-family: "PT Sans", sans-serif;
+html {
+  height: 100%;
+}
 
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
   background-color: #FFFFFF;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.navigation {
+display: flex;
+}
+
+.navigation-logo {
+  display: block;
+  margin-left: 70px;
+}
+
+.navigation-list {
+  width: 440px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 30px;
+}
+
+.navigation-user {
+  max-width: 320px;
+  margin-left: auto;
+}
+
 .navigation-link {
   font-family: inherit;
   font-size: 20px;
-  color: #000000;
-  font-weight: 700;
   line-height: 24px;
+  font-weight: 700;
   text-decoration: none;
   text-align: center;
-
+  color: #000000;
 }
 
 .button {
   font-family: inherit;
   font-size: 16px;
-  font-weight: 700;
   line-height: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
   color: #ffffff;
   background: #756157;
-  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
 }
 
 .button-assistant {
@@ -56,6 +89,10 @@ body {
   background: #7DB54F;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .hero-page {
   color: #756157;
   background-image: url("../images/divider-hero.svg"),url("../images/hero-main.jpg");
@@ -65,28 +102,34 @@ body {
   background-position: center, bottom;
 }
 
+.welcome-title {
+  display: block;
+  margin: 0 auto;
+}
+
+
 .heading-section {
 font-size: 30px;
-font-weight: 700;
 line-height: 36px;
+font-weight: 700;
 text-transform: uppercase;
 }
 
 .heading-part {
 font-size: 24px;
-font-weight: 700;
 line-height: 28px;
+font-weight: 700;
 text-transform: uppercase;
 }
 .text-block {
 font-size: 18px;
-font-weight: 400;
 line-height: 21px;
+font-weight: 400;
 }
 
 .advantages-item-detail {
-  background-color: #82B3D3;
   color: #FFFFFF;
+  background-color: #82B3D3;
 }
 
 .subscribe {
@@ -118,10 +161,10 @@ line-height: 21px;
 .breadcrumbs-link {
   font-family: inherit;
   font-size: 16px;
-  color: #FFFFFF;
   line-height: 21px;
-  text-decoration: none;
   text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .hotel-name {
