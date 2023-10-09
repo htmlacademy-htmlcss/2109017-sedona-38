@@ -20,18 +20,21 @@ html {
 
 body {
   margin: 0;
-  display: flex;
-  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
 }
 
 .container {
   margin: 0 auto;
   width: 1200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 }
 
 .navigation {
@@ -94,12 +97,13 @@ display: flex;
 }
 
 .hero-page {
+  min-height: 485px;
   color: #756157;
   background-image: url("../images/divider-hero.svg"),url("../images/hero-main.jpg");
   background-color: #cbe0ea;
-  background-size: cover, contain;
+  background-size: contain, cover;
   background-repeat: no-repeat;
-  background-position: center, bottom;
+  background-position: bottom, center;
 }
 
 .welcome-title {
@@ -107,11 +111,16 @@ display: flex;
   margin: 0 auto;
 }
 
+.desc {
+  text-align: center;
+}
+
 
 .heading-section {
 font-size: 30px;
 line-height: 36px;
 font-weight: 700;
+text-align: center;
 text-transform: uppercase;
 }
 
@@ -120,25 +129,75 @@ font-size: 24px;
 line-height: 28px;
 font-weight: 700;
 text-transform: uppercase;
+text-align: center;
 }
 .text-block {
 font-size: 18px;
 line-height: 21px;
 font-weight: 400;
+text-align: center;
 }
 
-.advantages-item-detail {
+.advantages-item:nth-child(odd) {
+  background-color: #83B3D31F;
+}
+
+.advantages-item:nth-child(even) {
+  background-color: #83B3D333;
+}
+
+.advantages-list .advantages-item-detail {
   color: #FFFFFF;
   background-color: #82B3D3;
 }
 
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-item-detail {
+  min-width: 1200px;
+  min-height: 385px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-item-detail-part {
+  width: 230px;
+  align-self: center;
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
+.advantages-item {
+  width: 400px;
+  height: 385px;
+}
+
 .subscribe {
+  background-size: 100% auto;
+}
+
+
+.subscribe-index {
   color: #FFFFFF;
   background-image: url("../images/subscribe.jpg");
   background-color: #000000;
-  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+
+.subscribe-input {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
 }
 
 .footer-phone {
@@ -165,6 +224,13 @@ font-weight: 400;
   text-align: center;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.result-select {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
 
 .hotel-name {
