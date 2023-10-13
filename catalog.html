@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="container">
     <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo"  src="images/logo.svg" width="138" height="64" alt="Логотип сайта туристического городка Седона">
+          <img class="page-header-logo"  src="images/logo.svg"  width="140" height="70" alt="Логотип сайта туристического городка Седона">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -45,7 +46,7 @@
       </nav>
     </header>
 
-    <main class="main-catalog">
+    <main class="main-container main-catalog">
         <div class="filter" data-test="filter">
         <h1>Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -117,15 +118,17 @@
           <label>до<input type="number" value="9000"></label>
         </fieldset>
 
+        <div class="filter-button">
           <button class="button button-assistant" type="submit">Применить</button>
           <button class="button" type="reset">Сбросить</button>
+        </div>
         </form>
       </div>
 
       <section class="result" data-test="catalog">
         <header class="result-header">
           <h2 class="heading-section">Найдено гостиниц: 38</h2>
-          <select name="result-sort" aria-label="Сортировка найденого">
+          <select class="result-select" name="result-sort" aria-label="Сортировка найденого">
             <option value="cheap">Сначала дешевые</option>
           </select>
 
@@ -154,10 +157,12 @@
               <img class="result-img" src="images/hotel-catalog-photo/hotel-1.jpg" width="300" height="212" alt="Звездное небо на фоне скалы">
             </a>
             <a class="hotel-name" href="#" tabindex="-1">
-              <h3 class="heading-part">Amara Resort & Spa</h3>
+              <h3 class="heading-part heading-hotel">Amara Resort & Spa</h3>
             </a>
-            <p class="text-block">Гостиница</p>
-            <p class="text-block">От 4000 ₽</p>
+            <div class="text-block-hotel">
+              <p class="text-block">Гостиница</p>
+              <p class="text-block">От 4000 ₽</p>
+            </div>
             <a class="button" href="#">
               Подробнее
             </a>
@@ -175,10 +180,12 @@
               <img class="result-img" src="images/hotel-catalog-photo/hotel-2.jpg"   width="300" height="212" alt="Пасмурное ночное небо c радугой на фоне скал">
             </a>
             <a class="hotel-name" href="#" tabindex="-1">
-              <h3 class="heading-part">Villas at Poco Diablo</h3>
+              <h3 class="heading-part heading-hotel">Villas at Poco Diablo</h3>
             </a>
-            <p class="text-block">Гостиница</p>
-            <p class="text-block">От 5000 ₽</p>
+            <div class="text-block-hotel">
+              <p class="text-block">Гостиница</p>
+              <p class="text-block">От 5000 ₽</p>
+            </div>
             <a class="button" href="#">
               Подробнее
             </a>
@@ -196,10 +203,12 @@
               <img class="result-img" src="images/hotel-catalog-photo/hotel-3.jpg"  width="300" height="212" alt="Ясное голубое небо на фоне большой скалы">
             </a>
             <a class="hotel-name" href="#" tabindex="-1">
-              <h3 class="heading-part">Desert Quail Inn</h3>
+              <h3 class="heading-part heading-hotel">Desert Quail Inn</h3>
             </a>
-            <p class="text-block">Гостиница</p>
-            <p class="text-block">От 2500 ₽</p>
+            <div class="text-block-hotel">
+              <p class="text-block">Гостиница</p>
+              <p class="text-block">От 2500 ₽</p>
+           </div>
             <a class="button" href="#">
               Подробнее
             </a>
@@ -217,10 +226,12 @@
               <img class="result-img" src="images/hotel-catalog-photo/hotel-4.jpg"   width="300" height="212" alt="Ночное ясное небо на фоне скалистой горы">
             </a>
             <a class="hotel-name" href="#" tabindex="-1">
-              <h3 class="heading-part">GreenTree Inn</h3>
+              <h3 class="heading-part heading-hotel">GreenTree Inn</h3>
             </a>
-            <p class="text-block">Гостиница</p>
-            <p class="text-block">От 1500 ₽</p>
+            <div class="text-block-hotel">
+              <p class="text-block">Гостиница</p>
+              <p class="text-block">От 1500 ₽</p>
+           </div>
             <a class="button" href="#">
               Подробнее
             </a>
@@ -263,13 +274,13 @@
         </ul>
       </footer>
 
-      <section class="subscribe-catalog" data-test="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2 class="heading-section">Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама,<br>
+        <p class="desc">Только полезная информация и никакого спама,<br>
            честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label>
-           <input  type="text" name="email" placeholder="Ваш e-mail">
+           <input class="subscribe-input" type="text" name="email" placeholder="Ваш e-mail">
           </label>
            <button class="button subscribe-button button-assistant" type="submit">
             <span class="visually-hidden">Подписаться</span>
@@ -278,7 +289,6 @@
         </section>
     </main>
     <footer class="main-footer" data-test="footer">
-      <h2 class="visually-hidden">Контакты</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="social-link" href="#">
@@ -305,5 +315,6 @@
       </a>
     </p>
     </footer>
+    </div>
   </body>
 </html>
