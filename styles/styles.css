@@ -29,6 +29,17 @@ body {
   background-color: #F2F2F2;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -45,26 +56,28 @@ body {
 }
 
 
-.navigation {
-display: flex;
+.page-header{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .navigation-logo {
   display: block;
-  margin-left: 70px;
+  margin-bottom: -6px;
+  position: relative;
+  z-index: 2;
 }
 
 .navigation-list {
-  width: 440px;
+  max-width: 440px;
   margin: 0;
   padding: 0;
-  list-style: none;
-  margin-left: 30px;
-}
-
-.navigation-user {
-  max-width: 320px;
-  margin-left: auto;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-link {
@@ -75,7 +88,35 @@ display: flex;
   text-decoration: none;
   text-align: center;
   color: #000000;
+  display: block;
+  padding: 20px 16px;
 }
+
+.navigation-link-current {
+  border-bottom: 2px solid #756257;
+}
+
+.navigation-user-list {
+  max-width: 320px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation-user-link {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 22px 12px;
+}
+
+.navigation-user-item {
+  align-self: center;
+}
+
 
 .button {
   font-family: inherit;
@@ -101,8 +142,6 @@ display: flex;
   background: #7DB54F;
 }
 
-
-
 .hero-page {
   min-height: 485px;
   color: #756157;
@@ -111,15 +150,13 @@ display: flex;
   background-size: contain, cover;
   background-repeat: no-repeat;
   background-position: bottom, center;
+  margin-bottom: 70px;
 }
 
 .welcome-title {
   display: block;
   margin: 0 auto;
-}
-
-.desc {
-  text-align: center;
+  padding-top: 52px;
 }
 
 
@@ -129,90 +166,137 @@ line-height: 36px;
 font-weight: 700;
 text-align: center;
 text-transform: uppercase;
+margin: 0;
 }
 
-.heading-part {
+.subtitle {
 font-size: 24px;
 line-height: 28px;
 font-weight: 700;
 text-transform: uppercase;
 text-align: center;
+margin: 0;
 }
+
+.advantages-subtitle {
+  margin-bottom: 62px;
+}
+
 .text-block {
 font-size: 18px;
 line-height: 21px;
 font-weight: 400;
 text-align: center;
+margin: 0;
 }
 
-.advantages-item:nth-child(odd) {
-  background-color: #83B3D31F;
+.advantages-title {
+  margin: 0;
+  margin-bottom: 25px;
 }
 
-.advantages-item:nth-child(even) {
-  background-color: #83B3D333;
+.advantages-desc {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 70px;
 }
 
-.advantages-list .advantages-item-detail {
-  color: #FFFFFF;
-  background-color: #82B3D3;
-}
 
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
+
 }
 
-.advantages-item-detail {
-  min-width: 1200px;
+.advantages-item:nth-child(2n) {
+background-color: #83B3D31F;
+}
+
+.advantages-item:nth-child(2n+1) {
+  background-color: #83B3D333;
+  }
+
+.advantages-list .advantages-detail {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  width: 100%;
   min-height: 385px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.advantages-item-detail-part {
-  width: 230px;
-  align-self: center;
-  padding-left: 85px;
-  padding-right: 85px;
+
+.advantages-part {
+  min-width: 230px;
+  min-height: 200px;
+  padding: 90px 85px;
+  display: flex;
+  flex-direction: column;
 }
 
-.advantages-item {
-  width: 400px;
-  min-height: 385px;
+.advantages {
+  margin-bottom: 64px;
+}
+
+.service-title {
+  margin-bottom: 20px;
+}
+
+.service-desc {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 64px;
 }
 
 .service-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 .service-item {
-  width: 400px;
-  min-height: 385px;
+  min-width: 230px;
+  min-height: 200px;
+  padding: 90px 85px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .service-item:nth-child(odd) {
   background-color: #83B3D31F;
 }
 
+.service {
+  margin-bottom: 96px;
+}
+
 .search {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-height: 214px;
+  margin-bottom: 96px;
 }
 
 .search-button {
-  align-self: center;
+  margin-top: auto;
 }
+
+.search-desc {
+  text-align: center;
+  margin: 0;
+}
+
 
 .subscribe {
   background-size: 100% auto;
@@ -229,12 +313,28 @@ text-align: center;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 414px;
+}
+
+.subscribe-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  min-height: 214px;
+  padding: 96px 0;
+}
+
+
+.subscribe-desc {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 54px;
 }
 
 .subscribe-form {
   align-self: center;
 }
-
 
 .subscribe-input {
   font-family: inherit;
@@ -251,7 +351,7 @@ text-align: center;
 .footer-social-list {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
   margin-left: 70px;
 }
 
@@ -268,8 +368,14 @@ text-align: center;
   margin-right: 70px;
 }
 
-
-
+.breadcrumbs-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
 
 .breadcrumbs-link {
   font-family: inherit;
@@ -286,22 +392,37 @@ text-align: center;
   background-color: #000000;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 35px 70px;
 }
 
 .catalog-filter {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   display: flex;
   gap: 70px;
+
 }
 
 .catalog-filter-group {
+
   border: 0;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+
 }
 
 .catalog-filter-list {
   margin: o;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
   min-width: 150px;
+  font-size: 18px;
 }
 
 .result-header {
@@ -321,7 +442,7 @@ text-align: center;
 
 .result-list {
   margin: 0;
-  list-style: none;
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -354,7 +475,8 @@ text-transform: uppercase;
 
 .pagination-list {
   margin: 0;
-  list-style: none;
+  padding: 0;
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
