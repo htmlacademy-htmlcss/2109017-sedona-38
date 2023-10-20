@@ -353,6 +353,29 @@ background-color: #83B3D31F;
   padding: 0;
   list-style-type: none;
   margin-left: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-link-vk {
+  background-image: url(../images/social-icon/vk.svg);
+}
+
+.social-link-tg {
+  background-image: url(../images/social-icon/telegram.svg);
+}
+
+.social-link-yt{
+  background-image: url(../images/social-icon/youtube.svg);
 }
 
 
