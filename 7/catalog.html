@@ -128,24 +128,24 @@
 
       <section class="result" data-test="catalog">
         <header class="result-header">
-          <h2 class="heading-section">Найдено гостиниц: 38</h2>
+          <h2 class="heading-section result-title">Найдено гостиниц: 38</h2>
           <select class="result-select" name="result-sort" aria-label="Сортировка найденого">
             <option value="cheap">Сначала дешевые</option>
           </select>
 
           <ul class="view-list">
             <li class="view-item">
-              <button  class="view-button" type="button">
+              <button  class="view-button view-tile view-button-activ" type="button">
                 <span class="visually-hidden">Выбрать отображение плиткой</span>
               </button>
             </li>
-            <li class="view-item">
-              <button  class="view-button" type="button">
+            <li class="view-item ">
+              <button  class="view-button view-slider" type="button">
                 <span class="visually-hidden">Выбрать отображение слайдер</span>
               </button>
             </li>
             <li class="view-item">
-              <button  class="view-button" type="button">
+              <button  class="view-button view-listing" type="button">
                 <span class="visually-hidden">Выбрать отображение списком</span>
               </button>
             </li>
@@ -153,6 +153,7 @@
         </header>
 
         <ul class="result-list">
+
           <li class="result-item">
             <a href="#" tabindex="-1">
               <img class="result-img" src="images/hotel-catalog-photo/hotel-1.jpg" width="300" height="212" alt="Звездное небо на фоне скалы">
@@ -164,12 +165,14 @@
               <p class="text-block">Гостиница</p>
               <p class="text-block">От 4000 ₽</p>
             </div>
+            <div class="button-result">
             <a class="button" href="#">
               Подробнее
             </a>
             <button type="submit" class="button button-assistant">
               в избранное
             </button>
+            </div>
             <p class="star star-4">
               <span class="visually-hidden">Гостиница 4 звезды</span>
             </p>
@@ -187,12 +190,14 @@
               <p class="text-block">Гостиница</p>
               <p class="text-block">От 5000 ₽</p>
             </div>
+            <div class="button-result">
             <a class="button" href="#">
               Подробнее
             </a>
             <button type="submit" class=" button result-button">
               В избранном
             </button>
+          </div>
             <p class="star star-4">
               <span class="visually-hidden">Гостиница 4 звезды</span>
             </p>
@@ -210,12 +215,14 @@
               <p class="text-block">Гостиница</p>
               <p class="text-block">От 2500 ₽</p>
            </div>
+           <div class="button-result">
             <a class="button" href="#">
               Подробнее
             </a>
             <button type="submit" class="button button-assistant">
               в избранное
             </button>
+          </div>
             <p class="star star-3">
               <span class="visually-hidden">Гостиница 3 звезды</span>
             </p>
@@ -233,47 +240,50 @@
               <p class="text-block">Гостиница</p>
               <p class="text-block">От 1500 ₽</p>
            </div>
+           <div class="button-result">
             <a class="button" href="#">
               Подробнее
             </a>
             <button type="submit" class="button button-assistant">
               в избранное
             </button>
+          </div>
             <p class="star star-2">
               <span class="visually-hidden">Гостиница 2 звезды</span>
             </p>
             <p class="hotel-rating">Рейтинг: 5,0</p>
           </li>
         </ul>
+
+
+        <footer class="catalog-footer">
+          <ul class="pagination-list">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+
+            <li class="pagination-item">
+              <a class="pagination-link ">2</a>
+            </li>
+
+            <li class="pagination-item">
+              <a class="pagination-link ">3</a>
+            </li>
+
+           <li class="pagination-item">
+              <a class="pagination-link ">4</a>
+            </li>
+
+            <li class="pagination-item pagination-point">
+              <a class="pagination-link ">...</a>
+            </li>
+
+            <li class="pagination-item">
+              <a class="pagination-link ">10</a>
+            </li>
+          </ul>
+        </footer>
       </section>
-
-      <footer class="catalog-footer">
-        <ul class="pagination-list">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-
-          <li class="pagination-item">
-            <a class="pagination-link ">2</a>
-          </li>
-
-          <li class="pagination-item">
-            <a class="pagination-link ">3</a>
-          </li>
-
-          <li class="pagination-item">
-            <a class="pagination-link ">4</a>
-          </li>
-
-          <li class="pagination-item pagination-point">
-            <a class="pagination-link ">...</a>
-          </li>
-
-          <li class="pagination-item">
-            <a class="pagination-link ">10</a>
-          </li>
-        </ul>
-      </footer>
 
       <section class="subscribe" data-test="subscribe">
         <div class="subscribe-part">
