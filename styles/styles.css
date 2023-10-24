@@ -117,6 +117,35 @@ body {
   text-align: center;
   display: block;
   padding: 22px 12px;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.search-link {
+background-image: url(../images/search.svg);
+}
+
+.favorite-link {
+  background-image: url(../images/heart.svg);
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 20px;
+  font-size: 10px;
+  line-height: 10px;
+  color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #7DB54F;
+
 }
 
 .navigation-user-item {
@@ -193,6 +222,8 @@ font-size: 18px;
 line-height: 21px;
 font-weight: 400;
 margin: 0;
+text-align: center;
+
 }
 
 .advantages-title {
@@ -555,6 +586,10 @@ background-color: #83B3D31F;
 color: #000000;
 text-decoration: none;
 grid-column: span 2;
+}
+
+.text-hotel {
+  justify-self: start;
 }
 
 .hotel-price {
