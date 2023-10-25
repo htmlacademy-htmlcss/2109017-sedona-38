@@ -21,7 +21,6 @@ html {
 body {
   margin: 0;
   height: 100%;
-
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -50,11 +49,9 @@ body {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 }
 
-
 .main-container {
   flex-grow: 1;
 }
-
 
 .page-header{
   display: flex;
@@ -69,12 +66,10 @@ body {
   margin-bottom: -6px;
   position: relative;
   z-index: 2;
-  outline: 2px solid rgb(43, 29, 164);
 }
 
 .page-header-logo {
   vertical-align: top;
-  outline: 2px solid red;
 }
 
 .navigation-list {
@@ -84,6 +79,7 @@ body {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  gap: 32px;
 }
 
 .navigation-link {
@@ -95,7 +91,7 @@ body {
   text-align: center;
   color: #000000;
   display: block;
-  padding: 20px 16px;
+  padding: 20px 0;
 }
 
 .navigation-link-current {
@@ -116,7 +112,6 @@ body {
   text-decoration: none;
   text-align: center;
   display: block;
-  padding: 22px 12px;
   width: 40px;
   height: 40px;
   background-position: center;
@@ -145,15 +140,14 @@ background-image: url(../images/search.svg);
   height: 20px;
   border-radius: 50%;
   background: #7DB54F;
-
 }
 
 .navigation-user-item {
   align-self: center;
 }
 
-
 .button {
+  display: inline-block;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -163,8 +157,29 @@ background-image: url(../images/search.svg);
   background: #756157;
   text-transform: uppercase;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
   padding: 8px 10px;
   border-radius: 4px;
+}
+
+.button:hover {
+  background: #615048;
+}
+
+.button:focus {
+  background: #615048;
+}
+
+.button:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.navigation-user-button {
+  margin-left: 20px;
+  padding-left: 34px;
+  padding-right: 34px;
 }
 
 .button-assistant {
@@ -172,9 +187,36 @@ background-image: url(../images/search.svg);
   background: #82B3D3;
 }
 
+.button-assistant:hover {
+  background: #68A2CA;
+}
+
+.button-assistant:focus {
+  background: #68A2CA;
+}
+
+.button-assistant:active {
+  background: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 .result-button {
   color: #ffffff;
   background: #7DB54F;
+}
+
+.result-button:hover {
+  background: #6C9E42;
+}
+
+.result-button:focus {
+  background: #6C9E42;
+}
+
+.result-button:active{
+  background: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hero-page {
@@ -192,8 +234,8 @@ background-image: url(../images/search.svg);
   display: block;
   margin: 0 auto;
   padding-top: 52px;
+  padding-bottom: 25px;
 }
-
 
 .heading-section {
 font-size: 30px;
@@ -213,17 +255,36 @@ text-align: center;
 margin: 0;
 }
 
+.advantages {
+  margin-bottom: 64px;
+}
+
 .advantages-subtitle {
+  position: relative;
   margin-bottom: 62px;
 }
 
-.text-block {
-font-size: 18px;
-line-height: 21px;
-font-weight: 400;
-margin: 0;
-text-align: center;
+.advantages-subtitle::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  width: 60px;
+  left: 50%;
+  margin-left: -30px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.30);
+}
 
+.advantages-detail .advantages-subtitle::after {
+  background-color: rgba(255, 255, 255, 0.30);
+}
+
+.text-block {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
 }
 
 .advantages-title {
@@ -245,7 +306,6 @@ text-align: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
-
 }
 
 .advantages-item:nth-child(2n) {
@@ -279,8 +339,8 @@ background-color: #83B3D31F;
   flex-direction: column;
 }
 
-.advantages {
-  margin-bottom: 64px;
+.service {
+  margin-bottom: 96px;
 }
 
 .service-title {
@@ -311,12 +371,43 @@ background-color: #83B3D31F;
   gap: 30px;
 }
 
-.service-item:nth-child(odd) {
-  background-color: #83B3D31F;
+.service-subtitle {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  padding-top: 105px;
 }
 
-.service {
-  margin-bottom: 96px;
+.service-subtitle::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  background-repeat: no-repeat;
+  margin-left: -38px;
+  margin-top: -30px;
+  width: 75px;
+  height: 75px;
+}
+
+.service-house.service-subtitle::after {
+  background-image: url(../images/service-icon-photo/service-icon-1.svg);
+}
+
+.service-food.service-subtitle::after {
+  background-image: url(../images/service-icon-photo/service-icon-2.svg);
+}
+
+.service-souvenir.service-subtitle::after {
+  background-image: url(../images/service-icon-photo/service-icon-3.svg);
+}
+
+.service-item:nth-child(odd) {
+  background-color: #83B3D31F;
 }
 
 .search {
@@ -331,6 +422,7 @@ background-color: #83B3D31F;
 
 .search-button {
   margin-top: auto;
+  padding: 8px 50px;
 }
 
 .search-desc {
@@ -351,7 +443,7 @@ background-color: #83B3D31F;
   color: #FFFFFF;
   background-image: url("../images/subscribe.jpg");
   background-color: #84A8B6;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 414px;
@@ -374,6 +466,7 @@ background-color: #83B3D31F;
 }
 
 .subscribe-form {
+  display: flex;
   align-self: center;
 }
 
@@ -382,6 +475,18 @@ background-color: #83B3D31F;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.button-subscribe {
+  border-radius: 0 4px 4px 0;
+  padding: 8px 50px;
+}
+
+.subscribe-input-inner {
+  background-color: #F2F2F2;
 }
 
 .main-footer {
@@ -478,7 +583,6 @@ background-color: #83B3D31F;
 
 .catalog-filter-title {
   font-size: 20px;
-
 }
 
 .catalog-filter-list {
@@ -596,10 +700,34 @@ grid-column: span 2;
   justify-self: end;
 }
 
+.star {
+  display: flex;
+  gap: 8px;
+  background-image: url(../images/star.svg);
+  height: 17px;
+  background-repeat: space repeat;
+  background-position: left;
+}
+
+.star-4 {
+  width: 78px;
+}
+
+.star-3 {
+  width: 66px;
+}
+
+.star-2 {
+  width: 42px;
+}
+
 .hotel-rating {
-font-size: 16px;
-line-height: 20px;
-text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background: #F2F2F2;
+  border-radius: 4px;
+  padding: 8px 22px;
 }
 
 .pagination-list {
