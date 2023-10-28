@@ -233,7 +233,8 @@ background-image: url(../images/search.svg);
   background-size: contain, cover;
   background-repeat: no-repeat;
   background-position: bottom, center;
-  padding: 52px 70px;
+  padding: 52px 70px 25px;
+  box-sizing: border-box;
 }
 
 .welcome-title {
