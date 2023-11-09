@@ -211,6 +211,69 @@
             </svg>
           </a>
        </footer>
+
+       <div class="modal-container modal-container-close">
+        <div class="modal modal-search">
+          <button type="button" class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+              <ul class="modal-list">
+
+                <li class="modal-item modal-item-date">
+                  <label class="modal-label" for="arrival-date">Дата заезда:</label>
+                    <input class="modal-input modal-input-date"  type="text" name="arrival-date" id="arrival-date" value="27 апреля 2020" placeholder="Укажите дату" required>
+                    <p class="modal-text modal-text-error">Мы не можем отправить вас в прошлое.</p>
+                  </li>
+
+                  <li class="modal-item modal-item-date">
+                    <label class="modal-label" for="departure-date">Дата выезда:</label>
+                    <input class="modal-input modal-input-date" type="text" name="departure-date" id="departure-date" value="1 сентября 2023" placeholder="Укажите дату" required>
+                    <p class="modal-text">На эти даты есть свободные номера. Пока есть.</p>
+                  </li>
+
+                  <li class="modal-item modal-item-counter">
+                    <label class="modal-label" for="adults">Взрослые:</label>
+                    <div class="modal-input-wrapper">
+                    <button class="button-modal-counter  buttton-minus" type="button">
+                      <span class="visually-hidden">Минус один взрослый.</span>
+                    </button>
+                    <input class="modal-input modal-input-counter" type="text" size="3" name="adults" value="2" id="adults" placeholder="0" required>
+                    <button class="button-modal-counter buttton-plus"  type="button">
+                      <span class="visually-hidden">Плюс один взрослый.</span>
+                    </button>
+                  </div>
+                  </li>
+
+                  <li class="modal-item modal-item-counter">
+                    <div class="tooltip-wrapper label-icon">
+                    <label class="modal-label" for="child">Дети:</label>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-">
+                        <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"><circle cx="13" cy="13" r="13" fill="#83B3D3"/><path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd"/>
+                        </svg>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-child">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
+                  </div>
+                    <div class="modal-input-wrapper">
+                    <button class="button-modal-counter  buttton-minus" type="button">
+                      <span class="visually-hidden">Минус один ребенок.</span>
+                    </button>
+                    <input class="modal-input modal-input-counter" type="text" size="3" name="child" value="2" id="child" placeholder="0" required>
+                    <button class="button-modal-counter buttton-plus"  type="button">
+                      <span class="visually-hidden">Плюс один ребенок.</span>
+                    </button>
+                  </div>
+                  </li>
+              </ul>
+              <button class="button-assistant button-modal" type="submit">Найти</button>
+            </form>
+          </section>
+        </div>
+       </div>
     </div>
   </body>
 </html>
