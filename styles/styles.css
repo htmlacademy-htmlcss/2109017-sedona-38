@@ -55,7 +55,7 @@ body {
 
 .page-header{
   display: flex;
-  gap: 30px;
+  gap: 28px;
   padding-left: 70px;
   padding-right: 70px;
 }
@@ -135,7 +135,12 @@ body {
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
+  align-content: start;
+  padding-top: 12px;
+  row-gap: 12px;
+  column-gap: 3px;
 }
+
 
 .navigation-user-link {
   text-decoration: none;
@@ -356,10 +361,15 @@ background-color: #83B3D31F;
 
 .advantages-part {
   width: 230px;
-  min-height: 205px;
-  padding: 90px 85px;
+  min-height: 181px;
+  padding: 102px 85px;
   display: grid;
   gap: 30px;
+}
+
+.advantages-part-mini {
+  min-height: 161px;
+  padding: 112px 85px;
 }
 
 .advantages-subtitle::after {
@@ -402,9 +412,9 @@ background-color: #83B3D31F;
 }
 
 .service-item {
-  min-width: 230px;
+  width: 230px;
   min-height: 200px;
-  padding: 90px 85px;
+  padding: 81px 85px;
   display: grid;
   gap: 30px;
 }
@@ -460,6 +470,7 @@ background-color: #83B3D31F;
   line-height: 36px;
   margin-top: auto;
   min-width: 376px;
+  max-width: 600px;
 }
 
 .search-desc {
@@ -490,7 +501,7 @@ background-color: #83B3D31F;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  min-height: 214px;
+  min-height: 215px;
   padding: 96px 70px 104px;
 }
 
@@ -549,7 +560,7 @@ background-color: #83B3D31F;
 .main-footer {
   display: flex;
   justify-content: space-between;
-  padding: 40px 70px;
+  padding: 45px 70px;
 }
 
 .footer-social-list {
@@ -565,7 +576,7 @@ background-color: #83B3D31F;
 display: flex;
 justify-content: center;
 align-items: center;
-width: 40px;
+width: 47px;
 height: 40px;
 }
 .social-link {
@@ -605,8 +616,11 @@ height: 40px;
 
 .htmlacademy-link {
   display: block;
+  width: 115px;
+  height: 33px;
   margin: 0;
   padding: 0;
+  align-self: center;
 }
 
 
@@ -729,6 +743,7 @@ height: 40px;
   line-height: 24px;
   text-transform: capitalize;
   margin-bottom: 32px;
+  padding: 0;
 }
 
 .catalog-filter-list {
@@ -748,6 +763,7 @@ height: 40px;
 .control {
   display: flex;
   gap: 16px;
+  align-items: center;
 }
 
 .control-input {
@@ -758,6 +774,8 @@ height: 40px;
   height: 20px;
   background-color: #ffffff;
   border-radius: 4px;
+  display: block;
+  margin: 0;
 }
 
 .control-input[type="checkbox"]:checked {
@@ -805,6 +823,7 @@ height: 40px;
 display: flex;
 flex-direction: column;
 max-width: 287px;
+gap: 43px;
 }
 
 .range-scale {
@@ -864,7 +883,6 @@ max-width: 287px;
 .range-wrapper-inputs {
   display: flex;
   gap: 2px;
-  margin-bottom: 36px;
 }
 
 .range-input {
@@ -971,7 +989,8 @@ position: relative;
   line-height: 21px;
   color: #333333;
   width: 100%;
-  padding: 14px 20px;
+  min-height: 49px;
+  padding: 12px 20px;
   padding-right: 48px;
   background-color: #ffffff;
   border: 2px solid #E5E5E5;
@@ -1060,12 +1079,24 @@ opacity: 0.3;
   border: 1px solid #E6E6E6;
 }
 
-.result-img {
+.result-img-link {
   grid-column: span 2;
+  display: block;
+  margin: 0;
+  padding: 0;
+  min-width: 300px;
+}
+
+.hotel-img {
+  display: block;
+  width: 300px;
+  height: 212px;
+  object-fit: cover;
 }
 
 .heading-hotel {
   text-align: start;
+  text-transform: none;
 }
 
 .hotel-name {
@@ -1084,11 +1115,12 @@ grid-column: span 2;
 
 .star {
   display: flex;
-  gap: 8px;
   background-image: url("../images/star.svg");
   height: 17px;
   background-repeat: space repeat;
   background-position: left;
+  margin: 0;
+  align-self: center;
 }
 
 .star-4 {
@@ -1110,6 +1142,7 @@ grid-column: span 2;
   background: #F2F2F2;
   border-radius: 4px;
   padding: 8px 22px;
+  margin: 0;
 }
 
 .result::after {
@@ -1278,6 +1311,7 @@ grid-column: span 2;
   font-weight: 400;
   line-height: 21px;
   margin: 0;
+  padding: 4px 20px 0;
   grid-column: 2/3;
 }
 
@@ -1287,6 +1321,7 @@ grid-column: span 2;
 
 .modal-input {
   font-family: inherit;
+  font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   border: none;
@@ -1307,6 +1342,7 @@ background-color: #E6E6E6;
   background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
   background-position: center right 20px;
+  align-self: center;
 }
 
 
@@ -1364,24 +1400,26 @@ background-color: #E6E6E6;
 .modal-item-counter {
   display: grid;
   grid-template-columns: 1fr auto;
-
+  gap: 48px;
 }
 
 .modal-input-wrapper {
   display: grid;
   grid-template-columns: 40px auto 40px;
   background-color: rgb(242, 242, 242);
-
 }
 
 .button-modal {
   width: 100%;
+  font-family: inherit;
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
   border: none;
   margin-top: 48px;
   padding: 18px 77px;
   border-radius: 10px;
+  text-transform: uppercase;
 }
 
 .tooltip-wrapper {
