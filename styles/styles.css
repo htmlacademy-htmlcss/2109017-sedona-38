@@ -923,7 +923,7 @@ border-radius: 0 4px 4px 0;
 position: relative;
 }
 
-.range-lable {
+.range-label {
   position: absolute;
   color: rgba(0, 0, 0, 0.3);
   font-family: inherit;
@@ -1379,13 +1379,13 @@ background-color: #E6E6E6;
 }
 
 
-.buttton-plus {
+.button-plus {
   background-image: url("../images/plus.svg");
   border-radius: 0 4px 4px 0;
   opacity: 0.3;
 }
 
-.buttton-minus {
+.button-minus {
   background-image: url("../images/minus.svg");
   border-radius: 4px 0 0 4px;
   opacity: 0.3;
